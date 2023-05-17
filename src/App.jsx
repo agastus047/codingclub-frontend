@@ -1,10 +1,14 @@
 import './App.css'
+import { Footer } from './Components/Footer.jsx'
+
 
 function App() {
-
+  const style={
+    fontFamily: 'Source Code Pro',
+  };
   return (
-    <div>
-      Home Page
+    <div style={style}>
+    <Footer/>
     </div>
   )
 }
