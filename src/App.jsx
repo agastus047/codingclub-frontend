@@ -8,6 +8,8 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Header from './components/Header';
 import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
+import Home from './components/Home';
+import Events from './components/Events';
 
 function App() {
 
@@ -15,16 +17,19 @@ function App() {
 
   return (
     <div className='min-h-screen flex flex-col bg-black text-white'>
-      <Header setVisible={setVisible}/>
-      Home Page
-      <Sidebar visible={visible} position='right' onHide={() => setVisible(false)}>
-        <h2>Coding Club TKMCE</h2>
-        {/* <Link to='' onClick={()=> setVisible(false)}>Link 1</Link>
-        <Link to='' onClick={()=> setVisible(false)}>Link 2</Link> */}
-        <div>Link 1</div>
-        <div>Link 2</div>
-      </Sidebar>
-      <Footer />
+      <BrowserRouter>
+        <Header setVisible={setVisible}/>
+        <Sidebar visible={visible} position='right' onHide={() => setVisible(false)}>
+          <h2>Coding Club TKMCE</h2>
+          <Link to='/' onClick={()=> setVisible(false)}>Home</Link>
+          <Link to='/events' onClick={()=> setVisible(false)}>Events</Link>
+        </Sidebar>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/events' element={<Events/>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   )
 }

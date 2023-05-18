@@ -1,9 +1,9 @@
-const Events = () => {
+const Home = () => {
     return(
         <div className="flex-auto">
-            Events Page
+            Home Page
         </div>
     );
 };
 
-export default Events;
+export default Home;
