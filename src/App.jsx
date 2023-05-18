@@ -16,7 +16,7 @@ function App() {
   const [visible,setVisible] = useState(false);
 
   return (
-    <div className='min-h-screen flex flex-col bg-black text-white'>
+    <div className='min-h-screen flex flex-col bg-black text-white font-source'>
       <BrowserRouter>
         <Header setVisible={setVisible}/>
         <Sidebar visible={visible} position='right' onHide={() => setVisible(false)}>
