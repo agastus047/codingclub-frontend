@@ -20,9 +20,10 @@ function App() {
       <BrowserRouter>
         <Header setVisible={setVisible}/>
         <Sidebar visible={visible} position='right' onHide={() => setVisible(false)}>
-          <h2>Coding Club TKMCE</h2>
-          <Link to='/' onClick={()=> setVisible(false)}>Home</Link>
-          <Link to='/events' onClick={()=> setVisible(false)}>Events</Link>
+          <div className='flex flex-col gap-7 items-center'>
+            <Link to='/' onClick={()=> setVisible(false)}>Home</Link>
+            <Link to='/events' onClick={()=> setVisible(false)}>Events</Link>
+          </div>
         </Sidebar>
         <Routes>
           <Route path='/' element={<Home/>} />
