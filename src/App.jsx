@@ -7,13 +7,14 @@ import { useState } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Header from './components/Header';
 import { Link } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
 
   const [visible,setVisible] = useState(false);
 
   return (
-    <div>
+    <div className='min-h-screen flex flex-col bg-black text-white'>
       <Header setVisible={setVisible}/>
       Home Page
       <Sidebar visible={visible} position='right' onHide={() => setVisible(false)}>
@@ -23,6 +24,7 @@ function App() {
         <div>Link 1</div>
         <div>Link 2</div>
       </Sidebar>
+      <Footer />
     </div>
   )
 }
