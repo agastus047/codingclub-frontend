@@ -15,11 +15,11 @@ const Footer = () => {
                 <a href="#" className="block text-white hover:text-gray-500 hover:opacity-50 hover:translate-x-2">Terms and Conditions</a>
                 <a href="#" className="block text-white pb-40 hover:text-gray-500 hover:opacity-50 hover:translate-x-2">Privacy Policy</a>
             </div>
-            <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-white ">
+            <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-white hover:bg-black">
                 <p className='text-xs py-1 text-center hover:text-gray-500'>Coding Club TKMCE - All Rights Reserved</p>
             </div>
         </div>
-);
+    );
 };
 
 export default Footer;
