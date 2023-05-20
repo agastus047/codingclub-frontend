@@ -11,7 +11,7 @@ const Home = () => {
                 <img src={Logo} alt='logo' className='h-80 sm:h-[70vh]'></img>
             </div>
             <div className='relative hidden sm:block'>
-                <img src={AboutUsPic} className='absolute right-0 z-10'></img>
+                <img src={AboutUsPic} className='absolute right-0 z-10 h-[55%]'></img>
                 <div className='about-us h-[120vh] bg-gradient-to-r from-white to-slate-300 text-black relative'>
                     <div className='absolute top-32 left-9 w-[45%] xl:w-[35%]'>
                         <div className='text-4xl sm:text-5xl font-black'><span className='text-[#112EAF]'>{'<'}</span>About Us<span className='text-[#112EAF]'>{'>'}</span></div>
@@ -19,7 +19,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='h-screen'></div>
-                <img src={VisionPic} className='absolute bottom-[7%] left-0'></img>
+                <img src={VisionPic} className='absolute bottom-[7%] left-0 h-[49%]'></img>
                 <div className='absolute w-[35%] left-[35%] bottom-[35%]'>
                     <div className='text-5xl font-black'>Vision<span className='text-[#E5245A]'>{'>'}</span></div>
                     <p className='font-montserrat text-2xl mt-7'>To inculcate the culture of programming and development among students and to enhance their coding ability.</p>
