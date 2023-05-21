@@ -1,7 +1,7 @@
 import Logo from '../assets/coding club dp copy 2.svg'
 import '../styles/home.css'
 import AboutUsPic from '../assets/Code typing-bro (1) 1.svg'
-import VisionPic from '../assets/To the stars-rafiki 1.svg'
+import VisionPic from '../assets/To the stars-rafiki (1).svg'
 import AboutUsPic2 from '../assets/Code typing-bro.svg'
 import VisionPic2 from '../assets/To the stars-rafiki(2).svg'
 
@@ -21,7 +21,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='h-screen'></div>
-                <img src={VisionPic} className='absolute bottom-[7%] left-0 h-[49%]'></img>
+                <img src={VisionPic} className='absolute bottom-[14%] left-0 h-[35%]'></img>
                 <div className='absolute w-[35%] left-[35%] bottom-[35%]'>
                     <div className='text-5xl font-black'>Vision<span className='text-[#E5245A]'>{'>'}</span></div>
                     <p className='font-montserrat text-2xl mt-7'>To inculcate the culture of programming and development among students and to enhance their coding ability.</p>
@@ -45,6 +45,7 @@ const Home = () => {
                     <p className='font-montserrat'>To create a platform to impart and instil this culture of learning-by-practice among students and professionals alike, and to that end, our team organizes a multitude of events throughout the year.</p>
                 </div>
             </div>
+            <div>Illustrations by <a className='hover:underline underline-offset-4' href="https://storyset.com/">Storyset</a></div>
         </div>
     );
 };
