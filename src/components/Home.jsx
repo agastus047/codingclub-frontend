@@ -2,6 +2,8 @@ import Logo from '../assets/coding club dp copy 2.svg'
 import '../styles/home.css'
 import AboutUsPic from '../assets/Code typing-bro (1) 1.svg'
 import VisionPic from '../assets/To the stars-rafiki 1.svg'
+import AboutUsPic2 from '../assets/Code typing-bro.svg'
+import VisionPic2 from '../assets/To the stars-rafiki(2).svg'
 
 const Home = () => {
     return(
@@ -30,14 +32,16 @@ const Home = () => {
                 </div>
             </div>
             <div className='sm:hidden'>
-                <div className='bg-white text-black min-h-screen flex flex-col justify-center items-center px-7'>
+                <div className='bg-white text-black min-h-screen flex flex-col justify-center items-center p-7'>
+                    <img src={AboutUsPic2} className='h-64'></img>
                     <div className='text-4xl font-black mb-7'><span className='text-[#112EAF]'>{'<'}</span>About Us<span className='text-[#112EAF]'>{'>'}</span></div>
                     <p className='font-montserrat'><span className='text-[#112EAF] font-bold'>Coding club TKMCE</span> is an initiative to inculcate the culture of programming and development in our institute. We create a platform which allows students to gain assistance and mentorship to enhance their coding ability. We ensure that every student here at TKMCE should have an opportunity to learn how to code and develop a passion for it. Our aim is to impart and instill this culture of learning-by-practice among students and professionals alike, and to that end, our team organizes a multitude of events throughout the year.</p>
                 </div>
-                <div className='min-h-screen flex flex-col justify-center items-center text-center px-7'>
+                <div className='min-h-screen flex flex-col justify-center items-center text-center p-7'>
                     <div className='text-4xl font-black mb-7'><span className='text-[#E5245A]'>{'<'}</span>Vision<span className='text-[#E5245A]'>{'>'}</span></div>
                     <p className='font-montserrat'>To inculcate the culture of programming and development among students and to enhance their coding ability.</p>
-                    <div className='text-4xl font-black mb-7 mt-24'><span className='text-[#E5245A]'>{'<'}</span>Mission<span className='text-[#E5245A]'>{'>'}</span></div>
+                    <img src={VisionPic2} className='h-64'></img>
+                    <div className='text-4xl font-black mb-7'><span className='text-[#E5245A]'>{'<'}</span>Mission<span className='text-[#E5245A]'>{'>'}</span></div>
                     <p className='font-montserrat'>To create a platform to impart and instil this culture of learning-by-practice among students and professionals alike, and to that end, our team organizes a multitude of events throughout the year.</p>
                 </div>
             </div>
